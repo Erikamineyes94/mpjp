@@ -1,6 +1,6 @@
 package ex;
 
-public class S57 {
+public class S57 { //distance/time speed
     /**
      * Average speed
      * 
@@ -10,7 +10,7 @@ public class S57 {
      */
     public static double speed(double distance, double time) {
         // TODO
-        return 0;
+        return distance/time;
     }
 
     /**
@@ -22,9 +22,10 @@ public class S57 {
      * @param y1 second point y
      * @return distance
      */
-    public static double distance(int x0, int y0, int x1, int y1) {
+    public static double distance (int x0, int y0, int x1, int y1) {
+    	return 0;
         // TODO
-        return 0;
+        
     }
 
     /**
@@ -37,7 +38,7 @@ public class S57 {
      */
     public static double engineCapacity(double bore, double stroke, int nr) {
         // TODO
-        return 0;
+        return Math.pow(bore/2,2) *Math.PI* stroke* nr/1000;
     }
 
     // somma delle cifre in un numero
@@ -48,7 +49,14 @@ public class S57 {
      * @return sum of digits
      */
     public static int digitSum(int value) {
-        // TODO
-        return 0;
+  
+    int	counter=0;
+    value=Math.abs(value);
+    while (value!=0) {
+    	counter+=value%10;
+    	value /=10; //value=value diviso 10
     }
+        return counter;
+    }
+    
 }
