@@ -106,17 +106,13 @@ public class S58 {
 	 */
 	public static int[] sort(int a, int b, int c) {
 		int[] result = new int[3];
-		if ((a<b)&&(a<c)){
-			result[0]=a;
-			
-		}else if ((b<a)&&(b<c)){
-			result [0]=b;
-			
-			
-			
+		if ((a < b) && (a < c)) {
+			result[0] = a;
+
+		} else if ((b < a) && (b < c)) {
+			result[0] = b;
+
 		}
-		 
-		
 
 		// TODO
 
