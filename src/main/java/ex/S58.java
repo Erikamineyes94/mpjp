@@ -128,8 +128,15 @@ public class S58 {
 
 		} else if ((c<a)&& (c<b)) {
 			result[0]=c;
-		}
+		}  else if ((a>b)&&!(a>c)) {
+			result [1]=a;
 		
+		}else if ((b>a)&&!(b>c)) {
+			result [1]=b;
+		} else if ((c>a)&&!(c>b)) {
+			result [1]=c;
+		}
+				
 
 		// TODO
 
