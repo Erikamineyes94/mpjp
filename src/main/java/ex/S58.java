@@ -63,7 +63,7 @@ public class S58 {
 		default:
 			return "other";
 		}
-	}
+	} //non mettimo il break se metto return ho finito e non posso fare nulla, è un eccezione.
 
 	/**
 	 * Convert a value in the interval [0, 100] to a letter in [A, F]
@@ -74,8 +74,22 @@ public class S58 {
 	 * @return a letter in [A, F]
 	 */
 	public static char vote(double percentile) {
+		if (percentile>90) {
+			return 'A';
+		
+	} else if (percentile>80) {
+		return 'B';
+	} else if (percentile>70) {
+		return 'C';
+	} else if (percentile>60) {
+		return 'D';
+	} else if (percentile>50) {
+		return 'E';
+	}
+	else return 'F';
+	
 		// TODO
-		return 'F';
+		
 	}
 
 	/**
@@ -112,7 +126,10 @@ public class S58 {
 		} else if ((b < a) && (b < c)) {
 			result[0] = b;
 
+		} else if ((c<a)&& (c<b)) {
+			result[0]=c;
 		}
+		
 
 		// TODO
 
