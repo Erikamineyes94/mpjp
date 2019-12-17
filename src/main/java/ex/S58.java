@@ -63,7 +63,8 @@ public class S58 {
 		default:
 			return "other";
 		}
-	} //non mettimo il break se metto return ho finito e non posso fare nulla, è un eccezione.
+	} // non mettimo il break se metto return ho finito e non posso fare nulla, è un
+		// eccezione.
 
 	/**
 	 * Convert a value in the interval [0, 100] to a letter in [A, F]
@@ -74,22 +75,22 @@ public class S58 {
 	 * @return a letter in [A, F]
 	 */
 	public static char vote(double percentile) {
-		if (percentile>90) {
+		if (percentile > 90) {
 			return 'A';
-		
-	} else if (percentile>80) {
-		return 'B';
-	} else if (percentile>70) {
-		return 'C';
-	} else if (percentile>60) {
-		return 'D';
-	} else if (percentile>50) {
-		return 'E';
-	}
-	else return 'F';
-	
+
+		} else if (percentile > 80) {
+			return 'B';
+		} else if (percentile > 70) {
+			return 'C';
+		} else if (percentile > 60) {
+			return 'D';
+		} else if (percentile > 50) {
+			return 'E';
+		} else
+			return 'F';
+
 		// TODO
-		
+
 	}
 
 	/**
@@ -120,26 +121,31 @@ public class S58 {
 	 */
 	public static int[] sort(int a, int b, int c) {
 		int[] result = new int[3];
-		if ((a < b) && (a < c)) {
-			result[0] = a;
+		if (a < b) {
+			if (c < a) {
+				result[0] = c;
+				result[1] = a;
+				result[2] = b;
+			} else if (c > b) {
+				result[0] = a;
+				result[1] = b;
+				result[2] = c;
+			} else {
 
-		} else if ((b < a) && (b < c)) {
-			result[0] = b;
-
-		} else if ((c<a)&& (c<b)) {
-			result[0]=c;
-		}  else if ((a>b)&&!(a>c)) {
-			result [1]=a;
-		
-		}else if ((b>a)&&!(b>c)) {
-			result [1]=b;
-		} else if ((c>a)&&!(c>b)) {
-			result [1]=c;
+				result[0] = a;
+				result[1] = c;
+				result[2] = b;
+			}
 		}
-				
+		if (a < b) {
+			if (c < a) {
 
-		// TODO
+			}
 
+			// TODO
+
+			return result;
+		}
 		return result;
 	}
 }

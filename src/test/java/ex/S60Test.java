@@ -10,6 +10,7 @@ class S60Test {
     @Test
     void reverseStringPlain() {
         String actual = S60.reverse("abc");
+        
 
         assertThat(actual, is("cba"));
     }

@@ -1,3 +1,4 @@
+ 
 package ex;
 
 public class S60 {
@@ -29,11 +30,15 @@ public class S60 {
      * @param s
      * @return a string, same of input but without vowels
      */
-    public static String removeVowels(String s) {
-        // TODO
-        return "";
-    }
-
+  //  public static String removeVowels(String s) {
+        // TODO 
+    	
+    //	if (c!='a'&& c!='e'&& c!='i'&& c!='o'&& c!='u') {
+    		
+        
+ //   }
+    	//return "";
+   // }
     /**
      * Convert from binary to decimal
      * 
