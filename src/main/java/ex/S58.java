@@ -109,7 +109,7 @@ public class S58 {
 		if ((a<b)&&(a<c)){
 			result[0]=a;
 			
-		}else if (( b<a)&&(b<c)){
+		}else if ((b<a)&&(b<c)){
 			result [0]=b;
 			
 			
